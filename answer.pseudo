@@ -1,0 +1,21 @@
+import java.util.Random;
+import java.util.Scanner;
+
+Public class RandomNumberNameGenerator{
+
+
+void printName(String name)
+{
+Random ran = new Random();
+int num = ran.nextInt((15 - 6)+1) + 6;
+System.out.println(name + " " + num);
+}
+public static void main(String[] args) {
+RandomNumberNameGenerator out = new RandomNumberNameGenerator();
+Scanner in = new Scanner(System.in);
+System.out.println("Enter a name\n");
+String name = in.nextLine();
+out.printName(name);
+}
+
+}
